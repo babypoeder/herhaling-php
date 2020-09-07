@@ -27,10 +27,11 @@ foreach ($klas as $value) {
 $bucket_list =[];
 $hoeveelheid_activiteiten = readline("Hoeveel activiteiten wil je toevoegen aan de Bucket List?");
 for ($i=0; $i < $hoeveelheid_activiteiten; $i++) {
-  array_push($bucket_list, $activity = readline("Welke activiteiten wil je toevoegen?"));
+  $activity = readline("Welke activiteiten wil je toevoegen?");
+  array_push($bucket_list, $activity);
 }
 
-print_r($bucket_list);
+var_dump($bucket_list);
 
 foreach ($bucket_list as $value) {
   print $value;
